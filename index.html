@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebQuest Estatística</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url('math.jpg');
+            scrollbar-width: thin;
+        }
+        header {
+            background-color: #240601;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        nav {
+            background-color: #363434;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+        nav a:hover, nav a.active {
+            background-color: #0c0d0e;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .content-box {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            min-height: 400px;
+            min-width: 800px;
+        }
+        h1 {
+            color: #fff;
+        }
+        h2, h3 {
+            color: #2c3e50;
+        }
+        footer {
+            background-color: #240601;;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: auto;
+        }
+        .math-icon {
+            font-size: 2rem;
+            color: #e74c3c;
+            margin: 0.5rem;
+        }
+        .topics {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+            align-items: center;
+        }
+        .topic-card {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 4px solid #b80b0b;
+            width: 800px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estatística Aplicada - Web Quest</h1>
+        <img style="width: 300px;" src="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2025/01/cps-55-anos-edit.png" alt="" srcset="">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a class="nav-link active" data-target="inicio">Início</a></li>
+            <li><a class="nav-link" data-target="sobre">Sobre</a></li>
+            <li><a class="nav-link" data-target="conteudos">Conteúdos</a></li>
+            <li><a class="nav-link" data-target="historia">História</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="content-box">
+            <div id="inicio-content" class="content-section">
+                <h2>Seja bem vindo ao nosso WebQuest</h2>
+                <p>Com o nosso WebQuest, você poderá explorar diversos tópicos de Estatística de forma interativa dinâmica.
+                    Aqui você encontrará materiais, vídeos e atividades que facilitarão seu aprendizado e compreensão dos conceitos estatísticos.</p>
+                <p>Nosso objetivo é tornar o aprendizado de Estatística acessível e interessante para todos./p>
+                <p>Tenha um bom estudo!!</p>
+            </div>
+            
+            <div id="sobre-content" class="content-section hidden">
+                <h2>Sobre o Web Quest</h2>
+                <p>WebQuest proposto pelo professor Luciano O. Condori para a disciplina de estatística I aplicada no curso de análise e desenvolvimento de sistemas na Fatec Carapúcuba.</p>
+                
+                <h3>Autor:</h3>
+                <p>Henry Cabral Azevedo<br>
+                <H3>Curso:  </H3><p>Análise e Desenvolvimento de Sistemas</p>
+                <p>3º Semestre Noturno</p>
+                
+                <h3>Objetivos do Web Quest:</h3>
+                <ul>
+                    <li>Disponibilizar material de apoio aos alunos da disciplina de Estatística;</li>
+                    <li>Auxiliar durante a prática do conteúdo ministrado em aula durante os exercícios, em caso de dúvidas.</li>
+                    <li>Permitir que o aluno veja um assunto abordado de uma outra forma ou caso tenha perdido o conteúdo.</li>
+                </ul>
+                
+                <h3>Tarefa:</h3>
+                <p>Criar uma página de internet que disponibilize aos alunos de Estatística como material de apoio aos seus estudos.</p>
+                
+                <p>Este trabalho foi feito ao início de ajuda na pesquisa que exigiam em dificuldades com a disciplina de estatística mostrando desde os conceitos básicos para a disciplina quanto aos próprios conceitos da disciplina</p>
+                
+                <h3>Conclusão:</h3>
+                <p>Concluímos que a Estatística é uma ferramenta essencial para a compreensão e análise de dados em diversas áreas do conhecimento. Esperamos que este WebQuest tenha contribuído para ampliar sua visão sobre o tema, tornando o estudo mais acessível e interessante. Incentivamos você a continuar explorando e aplicando os conceitos aprendidos, pois a Estatística está presente em muitos aspectos do nosso cotidiano e pode ser fundamental para a tomada de decisões informadas.</p>
+            </div>
+            
+            <div id="conteudos-content" class="content-section hidden">
+                <h2>Conteúdos de Estatística</h2>
+                
+                <div class="topics">
+                    <div class="topic-card" id="freq-card" style="cursor:pointer;">
+                        <details>
+                            <summary><h3 style="display:inline;">Distribuição de Frequência</h3></summary>
+                            <p>Em estatística, a distribuição de frequência é um arranjo de valores que uma 
+                                ou mais variáveis tomam em uma amostra. Cada entrada na tabela contém a frequência ou 
+                                a contagem de ocorrências de valores dentro de um grupo ou intervalo específico, e deste modo, 
+                                a tabela resume a distribuição dos valores da amostra.</p>
+
+                            <iframe width="480" height="277" src="https://www.youtube.com/embed/9oJM0CJ-5VI" title="População e Amostra - Estatística Básica -  Estimativa, estimador e parâmetros" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </details>
+                    </div>
+
+                    <div class="topic-card">
+                        <details>
+                            <summary><h3 style="display:inline;">Correlação e Regressão Linear</h3></summary>
+                            <p>A análise de correlação fornece um número que resume o grau de relacionamento linear entre as duas variáveis. Já a análise de regressão fornece uma equação que descreve o comportamento de uma das variáveis em função do comportamento da outra variável.
+
+                            A regressão linear simples é o quadrado mínimo estimador de um modelo de regressão linear com uma única variável explicativa.</p>
+
+                            <iframe width="480" height="277" src="https://www.youtube.com/embed/5Nmzd9slQk0" title="Correlação e Regressão Linear Simples" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </details>
+                    </div>
+
+                    <div class="topic-card">
+                        <details>
+                            <summary><h3 style="display:inline;">Probabilidade</h3></summary>
+                            <p>Probabilidade é o estudo das chances de obtenção de cada resultado de um experimento aleatório. A essas chances são atribuídos os números reais do intervalo entre 0 e 1. Resultados mais próximos de 1 têm mais chances de ocorrer. Além disso, a probabilidade também pode ser apresentada na forma percentual.</p>
+                            <iframe width="480" height="277" src="https://www.youtube.com/embed/3gBcMmNQwHA" title="PROBABILIDADES|Espaço Amostral e Eventos (Exemplos com dados e moedas)|Professor Viégas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </details>
+                    </div>
+
+                    <div class="topic-card">
+                        <details>
+                            <summary><h3 style="display:inline;">Variáveis Aleatórias</h3></summary>
+                            <p>Classificação das variáveis aleatórias. As variáveis aleatórias podem ser discretas, contínuas ou mistas. Uma função , definida no espaço amostral e assumindo valores em um conjunto enumerável de pontos da reta, é dita uma variável aleatória discreta.
+
+                            A função massa de probabilidade (também designada por função probabilidade) faz corresponder a cada valor do espaço de resultados - que é obrigatoriamente um conjunto enumerável - um valor real positivo menor ou igual a 1, valor esse que indica a probabilidade da variável aleatória discreta para o valor .
+
+                            Na teoria da probabilidade e na estatística, a distribuição de Poisson é uma distribuição de probabilidade de variável aleatória discreta que expressa a probabilidade de uma série de eventos ocorrer num certo período de tempo se estes eventos ocorrem independentemente de quando ocorreu o último evento.
+
+                            Em teoria das probabilidades e estatística, a distribuição binomial é a distribuição de probabilidade discreta do número de sucessos numa sequência de n tentativas.</p>
+
+
+                            <iframe width="480" height="277" src="https://www.youtube.com/embed/wc6qIyg3Iqo" title="Variáveis Aleatórias Discretas e Contínuas | Probabilidade e Estatística | Khan Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="480" height="277" src="https://www.youtube.com/embed/yhfODPGaMmY" title="Distribuição Normal" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="480" height="277" src="https://www.youtube.com/embed/tvggl21yNz4" title="Distribuição Binomial:" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="480" height="277" src="https://www.youtube.com/embed/5YZ30qp9ANo" title="Variáveis Aleatórias." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </details>
+                    </div>
+
+                    <div class="topic-card">
+                        <details>
+                            <summary><h3 style="display:inline;">Intervalo de Confiança</h3></summary>
+                            <p>Em estatística, intervalo de confiança (IC) é um tipo de estimativa por intervalo de um parâmetro populacional desconhecido. Introduzido na estatística por Jerzy Neyman em 1937, é um intervalo observado (calculado a partir de observações) que pode variar de amostra para amostra e que com dada frequência (nível de confiança) inclui o parâmetro de interesse real não observável.</p>
+                            <iframe width="480" height="277" src="https://www.youtube.com/embed/ivXW8WLnzdU" title="Intervalo de Confiança 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe width="480" height="277" src="https://www.youtube.com/embed/NPkoO2U3cWs" title="Exemplo de Intervalo de Confiança" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </details>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="historia-content" class="content-section hidden">
+                <h2>História da estatística</h2>
+                <p>A história da estatística remonta às civilizações antigas, como Egito, Babilônia, China e Roma, que já coletavam dados sobre população, agricultura, impostos e guerras para fins administrativos. Esses primeiros registros estatísticos eram usados principalmente para organizar e controlar os assuntos do Estado, como censos populacionais e arrecadação de tributos. Com o surgimento dos Estados modernos, especialmente a partir do Renascimento, a coleta e análise de dados se intensificaram, tornando-se ferramentas importantes para governos e estudiosos entenderem melhor a sociedade.</p>
+
+                <p>No século XVII, a estatística começou a se desenvolver como ciência, com contribuições fundamentais de John Graunt, que analisou dados de mortalidade e identificou padrões populacionais. Nessa mesma época, matemáticos como Pascal, Fermat e Laplace iniciaram os estudos de probabilidade, que mais tarde se uniriam à estatística para formar a base da análise de dados. No século XIX, surgiram conceitos como correlação, regressão e distribuição normal, e a estatística passou a ser aplicada em áreas como biologia, medicina, economia e ciências sociais, ganhando relevância científica.</p>
+
+                <p>Já no século XX, com o avanço da matemática e da computação, a estatística se consolidou como uma ciência fundamental para a pesquisa e a tomada de decisões. Ferramentas como testes de hipóteses, amostragem, análise de variância e inferência estatística foram desenvolvidas e aplicadas em larga escala. No século XXI, com a explosão do volume de dados, a estatística se tornou essencial na era digital, integrando áreas como ciência de dados, inteligência artificial e big data, e sendo aplicada em praticamente todos os campos do conhecimento humano.</p>
+                
+                <div style="text-align: center; margin-top: 1rem;">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        Site Criado Por: Henry Cabral Azevedo<br>
+        Curso de Análise e Desenvolvimento de Sistemas - Fatec Carapicuíba<br>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    
+                    this.classList.add('active');
+                    
+                    document.querySelectorAll('.content-section').forEach(section => {
+                        section.classList.add('hidden');
+                    });
+                    
+                    const target = this.getAttribute('data-target');
+                    document.getElementById(`${target}-content`).classList.remove('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
